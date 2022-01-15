@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+.grid-container div {
+  border: 1px solid black;
+}
+.grid-container img {
+  display: block;
+  width: 100%;
+}
+
+.grid-nav {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 100px;
+    grid-template-rows: 100px 100px 100px;
+  }
+
+  .grid-nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}/*# sourceMappingURL=grids.css.map */
